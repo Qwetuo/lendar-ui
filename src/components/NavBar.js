@@ -1,36 +1,31 @@
 import React from "react";
-import { Menu } from "semantic-ui-react";
-
 import Logo from "./Logo";
 
 const styles = {
   container: {
     maxHeight: "60px",
-    padding: "0.4rem"
+    padding: "0.4rem",
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
   },
   logo: {
     width: "50px",
     height: "50px",
-    float: "left"
+    float: "left",
+    marginRight: "2px"
   },
   logoText: {
-    float: "right",
     height: "50px",
     lineHeight: "50px",
-    marginLeft: "3px",
     color: "#0063AF"
   }
 };
 
 const NavBar = () => {
   return (
-    <div>
-      <Menu fixed="top" pointing>
-        <div style={styles.container}>
-          <Logo style={styles.logo} />
-          <div style={styles.logoText}>endar</div>
-        </div>
-      </Menu>
+    <div style={styles.container}>
+      <Logo style={styles.logo} />
+      <div style={styles.logoText}>endar</div>
+      <div style={{ clear: "both" }} />
     </div>
   );
 };
