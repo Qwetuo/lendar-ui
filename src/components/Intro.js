@@ -3,6 +3,7 @@ import React from "react";
 import heroImage from "../images/sofa-image.jpg";
 
 import RenderFlip from "./RenderFlip";
+import RectangleButton from "./RectangleButton";
 
 const styles = {
   hero: {
@@ -22,6 +23,10 @@ const styles = {
     lineHeight: "1.3em",
     letterSpacing: "0.5px",
     color: "black"
+  },
+  extraButtonStyle: {
+    margin: "1rem",
+    padding: "3px 2rem"
   }
 };
 
@@ -31,6 +36,10 @@ const Intro = () => {
       <div style={styles.introContainer}>
         EARN QUICK BUCKS WHILE <RenderFlip render={"freeTime"} />
         SIMPLY SWIPE, MATCH, WORK
+        <RectangleButton
+          message="Start Now"
+          extraStyle={styles.extraButtonStyle}
+        />
       </div>
     </div>
   );
