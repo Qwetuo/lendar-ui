@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
-import heroImage from "./images/sofa-image.jpg";
-
 import NavBar from "./components/NavBar";
-import RenderFlip from "./components/RenderFlip";
+import Intro from "./components/Intro"
 
 const styles = {
   background: {
@@ -16,24 +14,6 @@ const styles = {
     width: "360px",
     margin: "auto",
     backgroundColor: "white"
-  },
-  hero: {
-    backgroundImage: `url(${heroImage})`,
-    backgroundSize: "cover",
-    overflow: "hidden",
-    width: "360px",
-    minHeight: "250px"
-  },
-  introContainer: {
-    fontFamily: "Roboto",
-    position: "relative",
-    paddingTop: "2rem",
-    margin: "auto",
-    textAlign: "center",
-    fontSize: "20px",
-    lineHeight: "1.3em",
-    letterSpacing: "0.5px",
-    color: "black"
   }
 };
 
@@ -43,12 +23,7 @@ class App extends Component {
       <div style={styles.background}>
         <div style={styles.container}>
           <NavBar />
-          <div style={styles.hero}>
-            <div style={styles.introContainer}>
-              EARN QUICK BUCKS WHILE <RenderFlip render={"freeTime"} />
-              SIMPLY SWIPE, MATCH, WORK
-            </div>
-          </div>
+          <Intro />
         </div>
       </div>
     );
