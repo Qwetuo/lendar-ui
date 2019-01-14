@@ -3,6 +3,7 @@ import Logo from "./Logo";
 
 const styles = {
   container: {
+    background: "white",
     maxHeight: "60px",
     padding: "0.4rem",
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"

@@ -7,13 +7,13 @@ const styles = {
   background: {
     height: "100vh",
     width: "100vw",
-    backgroundColor: "#E7E7E7"
+    backgroundColor: "whitesmoke"
   },
   container: {
     minHeight: "100vh",
     width: "360px",
     margin: "auto",
-    backgroundColor: "white"
+    backgroundColor: "#E7E7E7"
   }
 };
 
