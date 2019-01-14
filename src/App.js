@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 import NavBar from "./components/NavBar";
-import Intro from "./components/Intro"
+import Intro from "./components/Intro";
+import JobsContainer from "./components/JobsContainer";
 
 const styles = {
   background: {
@@ -24,6 +25,7 @@ class App extends Component {
         <div style={styles.container}>
           <NavBar />
           <Intro />
+          <JobsContainer />
         </div>
       </div>
     );
